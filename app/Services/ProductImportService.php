@@ -43,7 +43,7 @@ class ProductImportService
                 'price' => $data['price'],
                 'description' => $data['description'] ?? null,
                 'category' => $category,
-                'capacity' => $category === ProductCategory::Battery->value ? (int) $data['capacity'] : null,
+                'capacity' => $category === ProductCategory::Battery->value ? (float) $data['capacity'] : null,
                 'power_output' => $category === ProductCategory::SolarPanel->value ? (int) $data['power_output'] : null,
                 'connector_type' => $category === ProductCategory::Connector->value ? $data['connector_type'] : null,
             ]);

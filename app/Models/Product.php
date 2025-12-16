@@ -26,5 +26,7 @@ class Product extends Model
 
     protected $casts = [
         'category' => ProductCategory::class,
+        'capacity' => 'decimal:2',
+        'power_output' => 'integer',
     ];
 }

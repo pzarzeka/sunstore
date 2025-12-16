@@ -17,5 +17,5 @@ Route::post('/import-save', [ImportController::class, 'importSave'])
 
 Route::get('/search', [SearchController::class, 'search'])
     ->name('search');
-Route::post('/search-result', [SearchController::class, 'searchResult'])
+Route::get('/search-result', [SearchController::class, 'searchResult'])
     ->name('search-result');
